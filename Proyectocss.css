@@ -1,0 +1,299 @@
+body {
+    background: linear-gradient(135deg, #000000, #291e3c, #000000);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadeIn 1s forwards; /* Animación de entrada */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* Se vuelve visible */
+    }
+  }
+  
+  header {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: transparent;
+  }
+  
+  .logo {
+    flex: 0 0 auto;
+    margin-left: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-text {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #a25d9f, #398581, #a25d9f);
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+  }
+  
+  .logo-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-image: url('ruta/a/la/imagen.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .logo-img {
+    max-width: 180px;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.1s;
+  }
+  
+  .logo-img:hover {
+    opacity: 0.8;
+  }
+  
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pane {
+    margin: 0 10px;
+  }
+  
+  .nav-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(162, 93, 159, 0.8);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .nav-button:hover {
+    background: rgba(162, 93, 159, 0.3);
+    transform: scale(1.05);
+  }
+  
+  .media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(-45deg, #000000 0%, #291e3c 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s ease;
+    margin: 10px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: slideUp 1s forwards; /* Animación de entrada para las tarjetas */
+    animation-delay: 0.5s; /* Retraso para que aparezcan después del body */
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px); /* Comienza desplazado hacia abajo */
+      opacity: 0; /* Oculto al inicio */
+    }
+    to {
+      transform: translateY(0); /* Se mueve a su posición original */
+      opacity: 1; /* Se vuelve visible */
+    }
+  }
+  
+  .card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card:hover {
+    transform: rotate(-5deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #185855;
+    font-weight: 700;
+    text-shadow: 
+      -1px -1px 0 #ffffff,
+      1px -1px 0 #ffffff,
+      -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff; /* Añade un borde blanco alrededor del texto */
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #a25d9f;
+    line-height: 1.4;
+  }
+  
+  .card:hover .card__description {
+    color: #ffffff;
+  }
+  
+  footer {
+    margin-top: 20px;
+  }
+  
+  body::before {
+    content: '';
+    background: url('imagen/l.jfif') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+    z-index: -1;
+    filter: brightness(0.5) blur(5px);
+  }
+  
+  .video-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .video-option {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(162, 93, 159, 0.8);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  video {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .info-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(162, 93, 159, 0.8);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid rgba(162, 93, 159, 0.8);
+    border-radius: 10px;
+    z-index: 0; /* Fondo detrás del contenido */
+  }
+  
+  .info-card__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    z-index: 1; /* Por encima del marco */
+  }
+  
+  .info-card__title {
+    font-size: 20px;
+    color: #398581;
+    margin: 0 0 10px;
+    z-index: 1; /* Por encima del marco */
+  }
+  
+  .info-card__description {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.4;
+    z-index: 1; /* Por encima del marco */
+  }
+  
+  .info-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+    .logo-text {
+      font-size: 30px;
+    }
+  
+    .logo-image {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  

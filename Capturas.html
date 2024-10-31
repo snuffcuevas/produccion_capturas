@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Proyectocss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Capturas - Producción Audiovisual</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagen/logo capturas  MORADO.png" alt="Logo" class="logo-img"> <!-- Asegúrate de reemplazar la ruta -->
+        </div>
+        <nav>
+            <div class="container">
+                <div class="pane">
+                    <button class="nav-button" onclick="showSection('imagenes')">Imágenes</button>
+                </div>
+                <div class="pane">
+                    <button class="nav-button" onclick="showSection('detras-de-camaras')">Detrás de Cámaras</button>
+                </div>
+                <div class="pane">
+                    <button class="nav-button" onclick="showSection('informacion-rodaje')">Información del Rodaje</button>
+                </div>
+                <div class="pane">
+                    <button class="nav-button" onclick="showSection('informacion-equipos')">Información de Equipos</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="imagenes">
+            <h2>Imágenes</h2>
+            <div class="media-container">
+                <!-- Fila 1 -->
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/entrevista.jpeg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Entrevista de Alis</h2>
+                                <p class="card__description">Alis busca trabajo en la ciudad de Potosí, plano corto cerrado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/Mirada de Alis.jpeg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Mirada de Alis</h2>
+                                <p class="card__description">El rostro primer plano de Alis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/todo el equipo.jpg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Equipo de Producción</h2>
+                                <p class="card__description">Cuarto de Alis alistando todo la produccion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/ajustando camara.jpg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Configurando</h2>
+                                <p class="card__description">Configurando la cámara, el equipo para grabar cuarto de Alis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fila 2 -->
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/asdas.jpg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Configurancion</h2>
+                                <p class="card__description">Configurando cámara y gimbal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/Alis.jpg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Preparando</h2>
+                                <p class="card__description">Preparando a Alis, tanto como el diálogo y su atuendo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/cuartoasada.jpg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">El cuarto</h2>
+                                <p class="card__description">El cuarto de Alis con la producción, antes de la grabación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/cafeteria.jpg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Preparando en cafeteria</h2>
+                                <p class="card__description">Preparando la cafeteria las luces y producción</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila 3 -->
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/equois.jpg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Las tomas</h2>
+                                <p class="card__description">Las tomas y escenas para planificar las grabaciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/Miguel.jpg" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Actor Miguel</h2>
+                                <p class="card__description">Actor de Miguel preparando se, con el dialogo mas con los movimientos que ara y comtiene que hacerlo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/Aun en desarrollo.jfif" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Pendiente 11</h2>
+                                <p class="card__description">Equipo mas los actores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                    </svg>
+                    <div class="media-container">
+                        <div class="card">
+                            <img src="imagen/Aun en desarrollo.jfif" alt="Descripción de la imagen 1" class="card__image">
+                            <div class="card__content">
+                                <h2 class="card__title">Pendiente 12</h2>
+                                <p class="card__description">Equipo mas los actores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="detras-de-camaras" style="display: none;">
+            <h2>Detrás de Cámaras</h2>
+            <section id="detras-de-camaras">
+                <div class="video-options">
+                    <div class="video-option">
+                        <video controls>
+                            <source src="Videos/entrevista de alis.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                        <label>Entrevista de Alis</label>
+                    </div>
+                    <div class="video-option">
+                        <video controls>
+                            <source src="Videos/Papa de alis llora.mp4" type="video/mp4">
+                        </video>
+                        <label>El papá de Gloria cuenta a Alis lo sucedido </label>
+                    </div>
+                    <div class="video-option">
+                        <video controls>
+                            <source src="Videos/cuartoasli.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                        <label>Alis en su cuarto, revisando averiguando de Gloria</label>
+                    </div>
+                    <div class="video-option">
+                        <video controls>
+                            <source src="Videos/aslilinda.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                        <label>Alis habla con Linda sobre Gloria</label>
+                    </div>
+                    <div class="video-option">
+                        <video controls>
+                            <source src="Videos/gfhrt.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                        <label>Alis habla con Linda sobre Gloria a detalle y cuenta lo sucedido</label>
+                    </div>
+                    <div class="video-option">
+                        <video controls>
+                            <source src="Videos/miguel esad.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                        <label>Miguel en cafeteria hablanco con Franz por celular</label>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="informacion-rodaje" style="display: none;">
+            <h2>Información del Rodaje</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <h3 class="info-card__title">Titulos</h3>
+                    <p class="info-card__description">Descripción de los titulos de los capitulos, su temática y los principales actores involucrados proximamente.</p>
+                </div>
+                <div class="info-card">
+                    <h3 class="info-card__title">Fechas de Rodaje</h3>
+                    <p class="info-card__description">Fechas aproximadas de inicio y finalización del rodaje que se dara en cada capitulo proximamente.</p>
+                </div>
+                <div class="info-card">
+                    <h3 class="info-card__title">Locaciones</h3>
+                    <p class="info-card__description">Descripción de las locaciones utilizadas durante el rodaje proximamente.</p>
+                </div>
+                <div class="info-card">
+                    <h3 class="info-card__title">Equipo Técnico</h3>
+                    <p class="info-card__description">Información sobre el director, productor y otros miembros clave del equipo técnico proximamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="informacion-equipos" style="display: none;">
+            <h2>Información de Equipos</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                  <img src="ruta/a/la/imagen1.jpg" alt="Equipo 1" class="info-card__image">
+                  <h3 class="info-card__title">Equipo 1</h3>
+                  <p class="info-card__description">Descripción del equipo 1. Aquí puedes incluir detalles sobre sus características y funciones.</p>
+                </div>
+                
+                <div class="info-card">
+                  <img src="ruta/a/la/imagen2.jpg" alt="Equipo 2" class="info-card__image">
+                  <h3 class="info-card__title">Equipo 2</h3>
+                  <p class="info-card__description">Descripción del equipo 2. Aquí puedes incluir detalles sobre sus características y funciones.</p>
+                </div>
+              
+                <div class="info-card">
+                  <img src="ruta/a/la/imagen3.jpg" alt="Equipo 3" class="info-card__image">
+                  <h3 class="info-card__title">Equipo 3</h3>
+                  <p class="info-card__description">Descripción del equipo 3. Aquí puedes incluir detalles sobre sus características y funciones.</p>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024.</p>
+    </footer>
+
+    <script src="proyectojv.js"></script>
+</body>
+</html>
